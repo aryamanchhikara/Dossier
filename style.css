@@ -1,0 +1,115 @@
+:root {
+  --bg: #0a0a0a;
+  --panel: rgba(255,255,255,0.04);
+  --text: #f5f3ef;
+  --muted: #a7a19a;
+  --line: rgba(255,255,255,0.1);
+  --accent: #d7c7af;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: radial-gradient(circle at 20% 10%, rgba(215,199,175,0.08), transparent 30%), #0a0a0a;
+  color: var(--text);
+}
+
+.page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+  min-height: 80vh;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  line-height: 0.95;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #ddd;
+}
+
+.tagline {
+  margin-top: 10px;
+  font-style: italic;
+  color: var(--accent);
+}
+
+.meta {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.hero-note {
+  margin-top: 40px;
+  color: var(--muted);
+}
+
+.hero-right {
+  background: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80') center/cover;
+  border-radius: 20px;
+  position: relative;
+  border: 1px solid var(--line);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.overlay .top {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+
+.overlay .bottom {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+}
+
+@media(max-width:900px){
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
