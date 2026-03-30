@@ -1,49 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dossier — Intentional Profiles</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dossier — Full Profile Mock</title>
+<style>
+:root {
+  --bg:#0a0a0a;
+  --panel:rgba(255,255,255,0.04);
+  --text:#f5f3ef;
+  --muted:#a7a19a;
+  --line:rgba(255,255,255,0.1);
+  --accent:#d7c7af;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,sans-serif;background:#0a0a0a;color:var(--text)}
+.page{max-width:1200px;margin:auto;padding:40px 20px}
+
+h1{font-family:Georgia,serif;font-size:clamp(3rem,6vw,5rem)}
+h2{font-family:Georgia,serif;margin-bottom:10px}
+p{color:#ddd;line-height:1.6}
+
+.section{margin-top:50px}
+.label{font-size:0.7rem;letter-spacing:0.15em;color:var(--accent);margin-bottom:10px}
+
+.card{border:1px solid var(--line);padding:25px;border-radius:15px;background:var(--panel);margin-top:20px}
+
+.pill{display:inline-block;padding:8px 12px;border:1px solid var(--line);border-radius:999px;margin:5px;color:var(--muted)}
+
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+
+@media(max-width:800px){.grid{grid-template-columns:1fr}}
+</style>
 </head>
-
 <body>
-  <div class="page">
+<div class="page">
 
-    <!-- HERO -->
-    <div class="hero">
-      <div class="hero-left">
-        <div>
-          <div class="section-label">A new way to present yourself</div>
-          <h1>Not just what you’ve done.<br/>Who you are.</h1>
+<!-- HERO -->
+<section style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:20px;align-items:center">
 
-          <div class="subtitle">
-            A modern identity profile that combines your work, taste, thinking, and vibe — so people can understand you instantly.
-          </div>
+<div>
+<h1>Dossier Profile</h1>
+<p style="margin-top:10px">Living with intention to create</p>
+<p style="margin-top:10px;color:var(--accent)">Not just someone smart — someone intentional.</p>
 
-          <div class="tagline">A living identity. Not a static resume.</div>
+<div style="margin-top:20px">
+<span class="pill">Location</span>
+<span class="pill">Builder</span>
+<span class="pill">Culture</span>
+</div>
+</div>
 
-          <div class="meta">
-            <div class="pill">Work</div>
-            <div class="pill">Taste</div>
-            <div class="pill">Vibe</div>
-            <div class="pill">Identity</div>
-          </div>
-        </div>
+<div style="height:300px;border-radius:15px;overflow:hidden;border:1px solid var(--line);background:url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80') center/cover;position:relative">
+<div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.7));display:flex;align-items:flex-end;padding:20px">
+<div style="font-family:Georgia,serif;font-size:1.3rem">This is who this person is</div>
+</div>
+</div>
 
-        <div class="hero-note">
-          LinkedIn shows credentials. Instagram shows lifestyle. We bring it all together — in one intentional profile.
-        </div>
-      </div>
+</section>
 
-      <div class="hero-right">
-        <div class="overlay">
-          <div class="top">Product Vision</div>
-          <div class="bottom">Understand people instantly.</div>
-        </div>
-      </div>
-    </div>
+<!-- ABOUT -->
+<section class="section">
+<div class="label">About</div>
+<div class="card">
+<p>Interested in identity, culture, and systems. Exploring how people present themselves and how that shapes perception.</p>
+</div>
+</section>
 
-  </div>
+<!-- HIGHLIGHTS -->
+<section class="section">
+<div class="label">Highlights</div>
+<div class="card">
+<p>Business Analyst @ NYSLRS</p>
+<p>Building identity platform</p>
+<p>Community focused</p>
+</div>
+</section>
+
+<!-- TASTE -->
+<section class="section">
+<div class="label">Taste</div>
+<div class="card">
+<span class="pill">Omar Afridi</span>
+<span class="pill">La Paz</span>
+<span class="pill">Acne Studios</span>
+<span class="pill">Our Legacy</span>
+<span class="pill">Maison Margiela</span>
+</div>
+</section>
+
+<!-- CURRENT -->
+<section class="section">
+<div class="label">Currently</div>
+<div class="card">
+<p>Exploring creatives making an impact and intentional identity.</p>
+</div>
+</section>
+
+<!-- VIBE + PEOPLE -->
+<section class="section grid">
+<div class="card">
+<div class="label">After 5pm</div>
+<p>Climbing, fashion, long walks, techno, cafés.</p>
+</div>
+
+<div class="card">
+<div class="label">People I Vibe With</div>
+<p>Builders with taste, clarity, and intention.</p>
+</div>
+</section>
+
+<!-- WORKPLACE -->
+<section class="section">
+<div class="label">What I bring</div>
+<div class="card">
+<p>Clarity, systems thinking, and taste as a decision filter.</p>
+</div>
+</section>
+
+<!-- SIGNAL LAYERS -->
+<section class="section">
+<div class="label">Signal Layers</div>
+<div class="grid">
+<div class="card"><p>Code (GitHub)</p></div>
+<div class="card"><p>Social (TikTok/IG)</p></div>
+<div class="card"><p>Finance Models</p></div>
+<div class="card"><p>Research</p></div>
+</div>
+</section>
+
+<!-- SOCIAL SNAPSHOT -->
+<section class="section">
+<div class="label">Social Snapshot</div>
+<div class="grid">
+<div class="card"><p>Instagram Preview</p></div>
+<div class="card"><p>TikTok Preview</p></div>
+</div>
+</section>
+
+<!-- FUTURE -->
+<section class="section">
+<div class="label">Future</div>
+<div class="card">
+<p>AI matching to help people find where they fit based on identity, not just skills.</p>
+</div>
+</section>
+
+</div>
 </body>
 </html>
